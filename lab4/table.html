@@ -3,46 +3,7 @@
 
 <head>
     <title>Лабораторная работа 4,5</title>
-    <link rel="stylesheet" href="style/table.css" >
-    <style>
-        a.redbl:link {
-            background-color: rgb(250, 212, 240);
-            margin: 10px;
-            display: flex;
-            text-align: center;
-            padding: 20px;
-            border-radius: 15px;
-            font-size: 30px;
-            text-decoration: none;
-        }
-        a.redbl:hover {
-            background-color: rgb(221, 179, 242);
-            margin: 10px;
-            display: flex;
-            text-align: center;
-            padding: 20px;
-            border-radius: 15px;
-            font-size: 30px;
-        } 
-        table,th,td,tr{
-            border: 2px solid rgb(221, 179, 242) ;
-            border-collapse: collapse;
-            border-radius: 5px;
-        }
-        th{
-            background-color:rgb(155, 107, 179);
-            text-align: left;
-            padding: 10px;
-        }
-        td{
-            background-color:rgb(205, 157, 229);
-            text-align: left;
-            padding: 10px;
-        }
-        td:hover{
-            background-color:rgb(195, 147, 219);
-        }
-       </style>
+    <link rel="stylesheet" href="style/table.css" >   
 </head>
 
 <body>
@@ -96,5 +57,34 @@
             <td>Суперсемейка</td>
         </tr>
      </table>
+     
+     <div class="content">
+        
+        <form>
+            <fieldset>
+                <legend>Заполните анкету и получите шанс отправится в Сеул:</legend>
+    
+                <label for="fname">ФИО:</label><br>
+                <input type="text" id="fname" name="fname" maxlength="10" required><br>
+    
+                <label for="Oname">Оружие:</label><br>
+                <input type="text" id="Oname" name="Oname" maxlength="10" required><br>
+    
+                <label for="Vname">Вселенная:</label><br>
+                <input type="text" id="Vname" name="Vname" maxlength="10" required><br>
+    
+                <div class="checkbox-container">
+                    <input type="checkbox" id="yes" name="yes" required value="yes">
+                    <label for="yes">Я даю согласие на публикацию введенных данных</label><br>
+                </div>
+    
+                <div class="tap">
+                    <button type="button" onclick="alert('Запрос получен Вселенной, физика будет сдана с первого раза!')">Нажми и твое желание исполнится</button>
+                    <input type="submit" value="Добавить">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+     
 
 </body>
